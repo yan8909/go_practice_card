@@ -5,5 +5,8 @@ func main() {
 	//var card string = "Ace of Spades"
 	cards := newDeck()
 
-	cards.print()
+	hand, reaminingCards := deal(cards, 5)
+
+	hand.print()
+	reaminingCards.print()
 }
