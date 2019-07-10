@@ -1,12 +1,11 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	//var card string = "Ace of Spades"
 	cards := newDeck()
 
-	hand, reaminingCards := deal(cards, 5)
-
-	hand.print()
-	reaminingCards.print()
+	fmt.Println(cards.toString())
 }
